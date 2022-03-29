@@ -20,52 +20,52 @@ Hyperledger Indy에 대해 더 배우고 싶으면, 이 프로젝트를 참고�
 
 이 데모는 브라우저만 사용하여 터미널에서 실행할 수 있습니다 , 또는 기술적인 경향이 있는 경우, 너는 너의 local machine에서 작동 시킬 수 있습니다. 다음 섹션에서 데모를 실행하려는 방법에 따라 `In Browser` 그리고 `Local Machine`에 대한 하위 섹션이 있습니다.
 
-## Prerequisites
+## Prerequisites(전제조건)
 
-### In Browser
+### 브라우저 내
 
-The only prequisite (other than a browser) is an account with [Docker Hub](https://hub.docker.com). Docker Hub is the "Play Store" for the [Docker](https://docker.com) ecosystem.
+전제조건은 [Docker Hub](https://hub.docker.com)계정을 사용한는 조건입니다. 도커 허브는  [Docker](https://docker.com)생태계에서 '플레이 스토어'같은 존재입니다.
 
 ### Local Machine
 
-To run this Indy Agent demonstration on your local machine, you must have the following installed:
+로컬 머신에서 이 Indy Agent 데모를 실행하기 위해서는 다음이 설치되어 있어야 합니다!
 
-- Docker, including Docker Compose - Community Edition is fine.
-  - If you do not already have Docker installed, open [this link](https://docs.docker.com/install/#supported-platforms) and then click the link for the installation instructions for your platform.
-  - Instructions for installing docker-compose for a variety of platforms can be found [here](https://docs.docker.com/compose/install/).
+- 도커, (Docker Compose를 포함한) - Community Edition도 괜찮습니다.
+  - 만약 도커가 설치되어 있지 않은 경우, [this link](https://docs.docker.com/install/#supported-platforms) 여기 링크를 통해 플랫폼을 설치합니다!
+  - 다양한 도커 컴포지트를 설치하는 방법은 여기를 참고하세요! [here](https://docs.docker.com/compose/install/).
 - git
-  - [This link](https://www.linode.com/docs/development/version-control/how-to-install-git-on-linux-mac-and-windows/) provides installation instructions for Mac, Linux (including if you are running Linux using VirtualBox) and native Windows (without VirtualBox).
+  - [This link](https://www.linode.com/docs/development/version-control/how-to-install-git-on-linux-mac-and-windows/) 해당 링크에서는 MAC, Linux 그리고 virtualBox를 사용하여 Linux를 싱행하는 경우를 포함해서 설치 방법을 제공합니다.
 
 ## Installing the Demonstration
 
-### In Browser
+### 브라우저 내
 
-Go to the [Play with Docker](https://labs.play-with-docker.com/) and (if necessary) login. This site is operated by Docker to support developers learning about Docker.
+[Play with Docker](https://labs.play-with-docker.com/)로 이동합니다. 그리고 필요하다면 로그인을 진행합니다. 해당 사이트는 Docker에 대해 학습하는 개발자를 위해 운영되는 사이트 입니다.
 
-> If you want to learn more about the `Play with Docker` environment, look at the [About](https://training.play-with-docker.com/about/) and the Docker related tutorials at the Docker Labs [Training Site](https://training.play-with-docker.com).
+> 만약  `Play with Docker` 환경에 대해 배우고 싶다면, [About](https://training.play-with-docker.com/about/) 여기를 참고하세요! [Training Site](https://training.play-with-docker.com)는 Docker Labs의 연습 사이트 입니다.
 
-Click the "Start" button to start a Docker sandbox you can use to run the demo, and then click the `+Add an Instance` link to start a terminal in your browser. Within the browser, run the following command:
+시작 버튼을 클릭하여 데모 실행에 사용할 수 있는 도커 샌드박스를 시작합니다. 그리고 +ADD an Ianstance 링크를 클릭하여 브라우저에서 터미널을 시작하고 다음 명령어를 실핼합니다:
 
 - `git clone https://github.com/hyperledger/education`
 
-> **Tip**: To paste text in the terminal window, right-click on the window and choose `paste`
+> **Tip**: 터미털에서 붙여넣을 떄 마우스 오른쪽 클릭을 한 뒤 `paste`를 눌러주세요!
 
-- Navigate to the location of the code by running the command:
+- 다음 명령어를 실행하여 코드 위치로 이동합니다:
   - `cd education/LFS171x/indy-material/nodejs`
 
 ### Local Machine
 
-To install the demonstration on your local machine you need to clone the git repository for the EdX Blockchain for Business course. To do that:
+로컬 머신에 데모를 설치하려면 EdX Blockchain for Business의 git 저장소를 clone해야 합니다:
 
-- Install the prerequisites listed above and make sure they are functioning on your system. To verify, open a terminal window and:
-  - Run `git --version`, which should return something like: `git version 2.17.1`
-  - Run `docker --version`, which should return something like: `Docker version 18.06.1-ce, build e68fc7a`
-  - Run `docker-compose --version`, which should return something like: `docker-compose version 1.22.0, build f46880fe`
-  - Your version numbers should be the same or higher.
-- Open a terminal session and navigate to where you want to install the source code.
+- 윈도우 터미널을 열어 실행 전 환경을 세팅환경을 확인합니다:
+  - Run `git --version`, `git version 2.17.1`인지 확인합니다.
+  - Run `docker --version`, `Docker version 18.06.1-ce, build e68fc7a`인지 확인합니다.
+  - Run `docker-compose --version`, `docker-compose version 1.22.0, build f46880fe`인지 확인합니다.
+  - 버전은 위 버전보다 같거나 크면 상관 없습니다.
+- 터미널을 열어 소스코드를 설치할 경로로 이동합니다.
 - Run the command: `git clone https://github.com/hyperledger/education/`
-  - That will download the repository containing the source code onto your system.
-- Navigate to the location of the code by running the command:
+  - 위 코드를 실행하면 소스코드가 정상적으로 시시템에 저장됩니다.
+- 다음 명령어를 통해 코드 위치로 이동합니다:
   - `cd education/LFS171x/indy-material/nodejs`
 
 ## Starting the Demonstration
