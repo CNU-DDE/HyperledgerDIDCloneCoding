@@ -1,5 +1,7 @@
 # Hyperledger Indy Agent 설명
 
+🎈 https://github.com/swcurran/education/tree/master/LFS171x
+
 이 폴더에는 기본 Hyperledger Indy Agent의 데모가 포함되어 있습니다. 에이전트는 웹 브라우저 인터페이스를 제공하여 에이전트 간의 관계 설정, 검증 가능한 자격 증명 발급 및 검증 가능한 자격 증명의 클레임을 증명합니다.
 
 > **이 데모는 새로운 구현의 기초로 사용하거나 에이전트 구현을 위한 참조로 사용해서는 _NOT_ 일부 초기 Indy 에이전트 코드를 기반으로 합니다. 이 데모가 개발된 이후로 Indy(및 Aries) 커뮤니티는 에이전트의 개념을 크게 발전시켰고 이 코드 기반은 버려졌습니다. 에이전트가 피상적인 수준에서 작동하는 방식을 이해하는 데 여전히 좋은 데모입니다 -- 자격 증명을 연결하고 교환하는 에이전트의 개념. 그러나 최신 Indy/Aries 코드를 기반으로 구축하는 데 관심이 있는 경우, [Aries project](https://github.com/hyperledger/aries), [Aries Cloud Agent - Python](https://github.com/hyperledger/aries-cloudagent-python) 및 기타 상호 운용 가능한 구성 요소를 살펴봐야 합니다. 개발자(또는 지망생)인 경우 이 [Becoming an Indy/Aries Developer](https://github.com/hyperledger/aries-cloudagent-python/tree/master/docs/GettingStartedAriesDev) 가이드를 확인하세요.**
@@ -24,7 +26,7 @@ Hyperledger Indy에 대해 더 배우고 싶으면, 이 프로젝트를 참고�
 
 ### 브라우저 내
 
-전제조건은 [Docker Hub](https://hub.docker.com)계정을 사용한는 조건입니다. 도커 허브는  [Docker](https://docker.com)생태계에서 '플레이 스토어'같은 존재입니다.
+전제조건은 [Docker Hub](https://hub.docker.com)계정을 사용한는 조건입니다. 도커 허브는 [Docker](https://docker.com)생태계에서 '플레이 스토어'같은 존재입니다.
 
 ### Local Machine
 
@@ -42,7 +44,7 @@ Hyperledger Indy에 대해 더 배우고 싶으면, 이 프로젝트를 참고�
 
 [Play with Docker](https://labs.play-with-docker.com/)로 이동합니다. 그리고 필요하다면 로그인을 진행합니다. 해당 사이트는 Docker에 대해 학습하는 개발자를 위해 운영되는 사이트 입니다.
 
-> 만약  `Play with Docker` 환경에 대해 배우고 싶다면, [About](https://training.play-with-docker.com/about/) 여기를 참고하세요! [Training Site](https://training.play-with-docker.com)는 Docker Labs의 연습 사이트 입니다.
+> 만약 `Play with Docker` 환경에 대해 배우고 싶다면, [About](https://training.play-with-docker.com/about/) 여기를 참고하세요! [Training Site](https://training.play-with-docker.com)는 Docker Labs의 연습 사이트 입니다.
 
 시작 버튼을 클릭하여 데모 실행에 사용할 수 있는 도커 샌드박스를 시작합니다. 그리고 +ADD an Ianstance 링크를 클릭하여 브라우저에서 터미널을 시작하고 다음 명령어를 실핼합니다:
 
